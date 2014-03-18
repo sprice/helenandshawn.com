@@ -1,0 +1,25 @@
+doctype
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    title Helen &amp; Shawn
+
+    link(rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css")
+    link(rel="stylesheet" href="/main.css")
+
+    <!--[if lt IE 9]>
+    script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+    script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
+    <![endif]-->
+
+  body
+    div.jumbotron
+      div.container
+        div.squirrel
+            img(src="/img/squirrel.png", width="430", height="506")
+
+
+    != yield
