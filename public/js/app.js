@@ -1,5 +1,5 @@
 (function() {
     $(document).ready(function() {
-        $('.squirrel .date').arctext({radius: 400, dir: -1});
+        $('.squirrel .date').arctext({radius: 800, dir: -1});
     });
 })();
