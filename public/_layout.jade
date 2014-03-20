@@ -8,7 +8,8 @@ html(lang="en")
     title Helen &amp; Shawn
 
     link(rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css")
-    link(rel="stylesheet" href="/main.css")
+    link(rel="stylesheet" href="/fonts/fonts.css")
+    link(rel="stylesheet" href="/css/main.css")
 
     <!--[if lt IE 9]>
     script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
@@ -20,6 +21,21 @@ html(lang="en")
       div.container
         div.squirrel
             img(src="/img/squirrel.png", width="430", height="506")
-
-
-    != yield
+            p.date August 2nd, 2014
+        div.navigation
+            ul
+                li.active
+                    a(href="/") Home
+                li
+                    a(href="rsvp") RSVP
+                li
+                    a(href="/events") Events
+                li
+                    a(href="/registry") Registry
+                li
+                    a(href="/sault-st-marie") The Soo
+    div.container
+        != yield
+    script(src="/vendors/jquery/jquery.min.js")
+    script(src="/js/jquery.arctext.js")
+    script(src="/js/app.js")
